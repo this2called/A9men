@@ -77306,9 +77306,152 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 				nextBlock = 370
 			elseif nextBlock == 370 then
 				print("[Amen] Script loaded successfully!")
-				print("[Amen] Press Right Ctrl to toggle GUI visibility.")
+				print("[Amen] Press Right Ctrl or tap Floating Amen Button to toggle GUI.")
 				ScriptFullyLoadedTime = tick()
 				ScriptFullyLoaded = true
+
+				-- [Delta Executor Mobile Toggle Button & Quick Control Panel]
+				task.spawn(function()
+					pcall(function()
+						local CoreGui = game:GetService("CoreGui")
+						local TweenService = game:GetService("TweenService")
+						local UserInputService = game:GetService("UserInputService")
+						local parentGui = (gethui and gethui()) or CoreGui:FindFirstChild("RobloxGui") or screenGui.Parent or CoreGui
+
+						local AmenMobileGui = Instance.new("ScreenGui")
+						AmenMobileGui.Name = "AmenDeltaUI"
+						AmenMobileGui.ResetOnSpawn = false
+						AmenMobileGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+						pcall(function() AmenMobileGui.DisplayOrder = 999999 end)
+
+						-- Draggable Floating Amen Icon
+						local floatBtn = Instance.new("ImageButton")
+						floatBtn.Name = "AmenFloatButton"
+						floatBtn.Size = UDim2.new(0, 48, 0, 48)
+						floatBtn.Position = UDim2.new(0, 16, 0.5, -24)
+						floatBtn.BackgroundColor3 = Color3.fromRGB(20, 22, 32)
+						floatBtn.BorderSizePixel = 0
+						floatBtn.Image = "rbxthumb://type=Asset&id=100074368064051&w=150&h=150"
+						floatBtn.ImageColor3 = Color3.fromRGB(255, 215, 100)
+						floatBtn.Active = true
+						floatBtn.Draggable = true
+						floatBtn.Parent = AmenMobileGui
+
+						local floatCorner = Instance.new("UICorner")
+						floatCorner.CornerRadius = UDim.new(1, 0)
+						floatCorner.Parent = floatBtn
+
+						local floatStroke = Instance.new("UIStroke")
+						floatStroke.Color = Color3.fromRGB(88, 101, 242)
+						floatStroke.Thickness = 2
+						floatStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+						floatStroke.Parent = floatBtn
+
+						local floatLabel = Instance.new("TextLabel")
+						floatLabel.Size = UDim2.new(1, 0, 0, 12)
+						floatLabel.Position = UDim2.new(0, 0, 1, -12)
+						floatLabel.BackgroundTransparency = 1
+						floatLabel.Text = "AMEN"
+						floatLabel.Font = Enum.Font.GothamBold
+						floatLabel.TextSize = 8
+						floatLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+						floatLabel.Parent = floatBtn
+
+						-- Quick Actions Bar for Delta Users (Fly, Attach, Hide, Menu)
+						local quickBar = Instance.new("Frame")
+						quickBar.Name = "QuickBar"
+						quickBar.Size = UDim2.new(0, 200, 0, 36)
+						quickBar.Position = UDim2.new(0, 70, 0.5, -18)
+						quickBar.BackgroundColor3 = Color3.fromRGB(15, 16, 24)
+						quickBar.BackgroundTransparency = 0.15
+						quickBar.BorderSizePixel = 0
+						quickBar.Visible = false
+						quickBar.Parent = AmenMobileGui
+
+						local barCorner = Instance.new("UICorner")
+						barCorner.CornerRadius = UDim.new(0, 8)
+						barCorner.Parent = quickBar
+
+						local barStroke = Instance.new("UIStroke")
+						barStroke.Color = Color3.fromRGB(50, 56, 82)
+						barStroke.Thickness = 1.2
+						barStroke.Parent = quickBar
+
+						local listLayout = Instance.new("UIListLayout")
+						listLayout.FillDirection = Enum.FillDirection.Horizontal
+						listLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+						listLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+						listLayout.Padding = UDim.new(0, 6)
+						listLayout.Parent = quickBar
+
+						local function createQuickBtn(name, text, onClick)
+							local btn = Instance.new("TextButton")
+							btn.Name = name
+							btn.Size = UDim2.new(0, 42, 0, 26)
+							btn.BackgroundColor3 = Color3.fromRGB(28, 30, 44)
+							btn.BorderSizePixel = 0
+							btn.Text = text
+							btn.Font = Enum.Font.GothamBold
+							btn.TextSize = 9
+							btn.TextColor3 = Color3.fromRGB(230, 230, 245)
+							btn.Parent = quickBar
+
+							local bCorner = Instance.new("UICorner")
+							bCorner.CornerRadius = UDim.new(0, 6)
+							bCorner.Parent = btn
+
+							btn.MouseButton1Click:Connect(function()
+								pcall(onClick)
+							end)
+							return btn
+						end
+
+						createQuickBtn("ToggleUI", "GUI", function()
+							if mainFrame then
+								mainFrame.Visible = not mainFrame.Visible
+							elseif screenGui then
+								screenGui.Enabled = not screenGui.Enabled
+							end
+						end)
+
+						createQuickBtn("CopyDiscord", "DISC", function()
+							if setclipboard then
+								setclipboard("https://discord.gg/micupindia")
+							end
+							if typeof(SendNotification) == "function" then
+								SendNotification("Amen Discord", "discord.gg/micupindia copied!", 2)
+							end
+						end)
+
+						createQuickBtn("Fling", "FLING", function()
+							if tbl and tbl.Fling ~= nil then
+								tbl.Fling = not tbl.Fling
+							end
+						end)
+
+						createQuickBtn("Fly", "FLY", function()
+							if tbl and tbl.Fly ~= nil then
+								tbl.Fly = not tbl.Fly
+							end
+						end)
+
+						-- Float button toggle logic
+						local isBarOpen = false
+						floatBtn.MouseButton1Click:Connect(function()
+							-- Toggle main GUI visibility directly
+							if mainFrame then
+								mainFrame.Visible = not mainFrame.Visible
+							elseif screenGui then
+								screenGui.Enabled = not screenGui.Enabled
+							end
+							isBarOpen = not isBarOpen
+							quickBar.Position = UDim2.new(floatBtn.Position.X.Scale, floatBtn.Position.X.Offset + 56, floatBtn.Position.Y.Scale, floatBtn.Position.Y.Offset + 6)
+							quickBar.Visible = isBarOpen
+						end)
+
+						AmenMobileGui.Parent = parentGui
+					end)
+				end)
 
 				do
 					local fn16 = fn2
