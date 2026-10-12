@@ -43,6 +43,16 @@ do
 					pcall(function()
 						game:GetService("CoreGui").RobloxGui["CoreScripts/NetworkPause"]:Destroy()
 					end)
+					pcall(function()
+						local playerGui = game:GetService("Players").LocalPlayer:FindFirstChild("PlayerGui")
+						if playerGui then
+							for _, g in ipairs(playerGui:GetChildren()) do
+								if g.Name == "EternityV1" or g.Name == "AmenDeltaUI" then
+									g:Destroy()
+								end
+							end
+						end
+					end)
 
 					IsKeyVerified = true
 					getgenv().IsKeyVerified = true
@@ -6900,7 +6910,12 @@ do
 
 				frame12.BackgroundTransparency = 1
 				frame13.BackgroundTransparency = 1
-				screenGui2.Parent = localPlayer_2:WaitForChild("PlayerGui")
+				frame12.Visible = false
+				screenGui2.Enabled = false
+				pcall(function()
+					local pGui = (gethui and gethui()) or localPlayer_2:FindFirstChild("PlayerGui") or game:GetService("CoreGui")
+					screenGui2.Parent = pGui
+				end)
 
 				do
 					task.spawn(function()
