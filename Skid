@@ -1,37 +1,13 @@
 --[==[
 
-                              '`":;Il!lII;,^`
-                       ^:I!>><+?[}}}1)111{[?_+>I;:^
-                    ;<_-[}11(fvzYzXJCYzXczvrjf)]+>lI;
-                 ;<?})|tfxvXCQZmZZwqpwwwZZQLCznt}~l;II;
-               ,<?1|fjruzCZppmOQQOZZwwmZ0QLUXnr)[i:",I!!
-              !_{|jrxnzJQ0OqqqZwqkaahhbwQLCXcvx|}-~!i>lli
-             ~](rnvvccUOZZOwmdho*M8BB%&MokmLCUvr|1[[1)[l!
-            +])fxxnuvzXYLQ0Omdh#&%$$$$$B&&M*abq0QL0LXvj)!>
-           <?{|rxnuccvzXYUCC0mqk#&@$$$$$$%&M*akdppZQJzuj)<~
-          ">?1(fxxxuvvcczczYJC0mh*8@B@@B@BM#adbdwm0CUcnxr~<
-          ;i-})(trnxjvcfffjfjvzOhW8BB@@$$@%MkqmZQLJYvrrjf+!>
-         "I+1xYLQCz]?{]{{{(tjuOhM8BBBW*W8%8#bmLCCCYvf)1}{_;+
-         >1uUUYu(}-~])rx)(ncvd*&8&aUzv|?!;;I<}fncUu->-1}+>^~?
-        !]tf)[-><?|vXYJUl~{>Qb*W8oLzj1[iI;::l~}nu1!?--{_~>^;~_
-        ;__--[fXQOQLYr}+l;l]Zk#%%#dQvt->+_!I_xnZO{I-_](__~`,l_
-         <_{LZwZ0Ju(]<!i:l<[Qd*%B8#bkbmz(]{uLXLw#mt_}rr|f?,I<-
-        {n?-UCYut}-?{<~{{}|vLwk#WWWadwwpwmm0Zpbk*#Q{_|uuj-!<i
-       _tu(]]_??+}t?1jYUzjtuUOqdka*MM8B&hmUr|c0ko8bJ)]|t{i
-       +]]]_!l>;!)f1~l-jr{?tcLZmwmqoW8&MbQczcuXJ0hbUt_()-
-       !<>>++<;;<rf1_>!!]jf]fcUQ0ZwpkaahbkooohbbU(?>~tf1>
-          i!I,:I>xj}+~l<-)n|-1juzULZqbho#dJxxYL0Yt(l>(f-
-          I"``:!>|r1_!~}unfj|_-1fnzLOqbhdUX0X(|(}?_~~)?
-         :`"":!>>]|]!IjcvCqZOY(~-1tncJZbdw0LQQXx{){><i
-       :'^`I!!><i:`I,{cJUzzLb*M#L)+])txY0wZQLLXxrx)<:
-      ^..`:>!>_:"`..fmUUcuzzcYwh#&*0u{++-[1tnur)[-i"
-     :..'^"`:?:^>."c#*qhmXXvurzU0qk#8%8hmXt!,"^^;>?
-    I......."'.''ip8$8kp#M*mznxOXnCZwhho#*01f[~!>+?-:
-    ,....^......)a%@%&*pd*W@$*mLJvw0uQhZ0Z0Ux1+III!>}
-    -.........!L&@@%BB%#kdkaM$$$B*qZCw#UUYL00Lu)COvZzc_-~
+        _                                 _     _     _ 
+       / \   _ __ ___   ___ _ __    ___| | __(_) __| |
+      / _ \ | '_ ` _ \ / _ \ '_ \  / __| |/ /| |/ _` |
+     / ___ \| | | | | |  __/ | | | \__ \   < | | (_| |
+    /_/   \_\_| |_| |_|\___|_| |_| |___/_|\_\|_|\__,_|
 
-                       deobfuscated by Ethone
-                  lua deobfuscation, perfected.
+                       Amen Skid
+                 discord.gg/micupindia
 
 ]==]
 local spill_2 = {}
@@ -415,8 +391,8 @@ do
 			end)
 
 			L1.tbl12 = {
-				pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu = {
-					customName = "SUBH | ADMIN",
+				horize1n = {
+					customName = "ZEN | ADMIN",
 					type = "gif",
 					imageUrl = "https://raw.githubusercontent.com/hor1zencodes/gif-tags/main/mine",
 					gifConfig = {
@@ -1226,7 +1202,7 @@ do
 								if name5 then
 									if #name5 ~= 0 then
 										str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-										if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+										if str3 == "horize1n" or str3 == "hor1zen" then
 											return true
 										end
 
@@ -1252,7 +1228,7 @@ do
 								if name5 then
 									if #name5 ~= 0 then
 										str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-										if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+										if str3 == "horize1n" or str3 == "hor1zen" then
 											return true
 										end
 
@@ -1276,7 +1252,7 @@ do
 								if name5 then
 									if #name5 ~= 0 then
 										str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-										if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+										if str3 == "horize1n" or str3 == "hor1zen" then
 											return true
 										end
 
@@ -1330,7 +1306,7 @@ do
 
 											if #name5 ~= 0 then
 												str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-												if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+												if str3 == "horize1n" or str3 == "hor1zen" then
 													return true
 												end
 
@@ -1355,7 +1331,7 @@ do
 
 											if #name5 ~= 0 then
 												str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-												if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+												if str3 == "horize1n" or str3 == "hor1zen" then
 													return true
 												end
 
@@ -1382,7 +1358,7 @@ do
 
 									if #name5 ~= 0 then
 										str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-										if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+										if str3 == "horize1n" or str3 == "hor1zen" then
 											return true
 										end
 
@@ -1409,7 +1385,7 @@ do
 							if name5 then
 								if #name5 ~= 0 then
 									str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-									if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+									if str3 == "horize1n" or str3 == "hor1zen" then
 										return true
 									end
 
@@ -1433,7 +1409,7 @@ do
 							if name5 then
 								if #name5 ~= 0 then
 									str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-									if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+									if str3 == "horize1n" or str3 == "hor1zen" then
 										return true
 									end
 
@@ -1487,7 +1463,7 @@ do
 
 										if #name5 ~= 0 then
 											str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-											if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+											if str3 == "horize1n" or str3 == "hor1zen" then
 												return true
 											end
 
@@ -1511,7 +1487,7 @@ do
 
 										if #name5 ~= 0 then
 											str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-											if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+											if str3 == "horize1n" or str3 == "hor1zen" then
 												return true
 											end
 
@@ -1537,7 +1513,7 @@ do
 
 								if #name5 ~= 0 then
 									str3 = string.lower(string.gsub(tostring(name5), "%s+", ""))
-									if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+									if str3 == "horize1n" or str3 == "hor1zen" then
 										return true
 									end
 
@@ -5426,7 +5402,7 @@ do
 					local str3 = string.lower(string.gsub(tostring(name4), "%s+", ""))
 					local whitelistedUsers
 
-					if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+					if str3 == "horize1n" or str3 == "hor1zen" then
 						return true
 					end
 					whitelistedUsers = getgenv().WhitelistedUsers
@@ -5593,7 +5569,7 @@ do
 
 						pcall(function()
 							if setclipboard then
-								setclipboard("https://discord.gg/eQFcharHwS")
+								setclipboard("https://discord.gg/micupindia")
 							end
 						end)
 
@@ -5626,7 +5602,7 @@ do
 									Body = HttpService:JSONEncode({
 										cmd = "INVITE_BROWSER",
 										nonce = HttpService:GenerateGUID(false),
-										args = { code = "eQFcharHwS" },
+										args = { code = "micupindia" },
 									}),
 								})
 							end
@@ -5668,7 +5644,7 @@ do
 						end
 
 						if typeof(SendNotification) == "function" then
-							SendNotification("Eternity Discord", "Discord invite link copied to clipboard!", 3)
+							SendNotification("Amen Discord", "Discord invite link (discord.gg/micupindia) copied to clipboard!", 3)
 						end
 					end
 
@@ -5787,7 +5763,7 @@ do
 						textLabel8.Size = UDim2.new(1, frame28, n207, 20)
 						frame28 = 12
 						textLabel8.Position = UDim2.new(0, frame28, n207, 64)
-						textLabel8.Text = "ETERNITY SCRIPT LOADER"
+						textLabel8.Text = "AMEN SCRIPT LOADER"
 						textLabel8.Font = Enum.Font.GothamBold
 						textLabel8.TextSize = 14
 						frame28 = 245
@@ -6949,8 +6925,8 @@ do
 						textLabel7.Text = ""
 
 						task.spawn(function()
-							for i = 1, 16 do
-								textLabel7.Text = string.sub("PROJECT ETERNITY", 1, i)
+							for i = 1, 12 do
+								textLabel7.Text = string.sub("PROJECT AMEN", 1, i)
 								task.wait(0.03)
 							end
 
@@ -7723,7 +7699,7 @@ do
 							task.wait(0.75)
 
 							if whitelistedUsers then
-								local whitelistedUsers2 = str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen"
+								local whitelistedUsers2 = str3 == "horize1n" or str3 == "hor1zen"
 
 								if not whitelistedUsers2 then
 									whitelistedUsers2 = getgenv().WhitelistedUsers
@@ -7975,7 +7951,7 @@ do
 			end)
 
 			L1.iterFn1 = string.lower(string.gsub(tostring(L1.name3), "%s+", ""))
-			L1.iterState1 = L1.iterFn1 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu"
+			L1.iterState1 = L1.iterFn1 == "horize1n"
 
 			if not L1.iterState1 then
 				nextBlock = 34
@@ -14763,7 +14739,7 @@ do
 
 					name4 = name4 or ""
 					local str3 = string.lower(name4)
-					if str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" or str3 == "hor1zen" then
+					if str3 == "horize1n" or str3 == "hor1zen" then
 						return true
 					end
 
@@ -50085,7 +50061,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 									end
 
 									do
-										local tbl19 = { pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu = true }
+										local tbl19 = { horize1n = true }
 										local iterFn12 = L1.iterFn1
 
 										fn2 = function()
@@ -50332,7 +50308,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 																	local text = data2.text or ""
 
 																	if username and text ~= "" and string.sub(text, 1, 1) == "." then
-																		local flag8 = string.lower(username) == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu"
+																		local flag8 = string.lower(username) == "horize1n"
 
 																		if not flag8 then
 																			flag8 = tbl19
@@ -50585,7 +50561,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 
 													iterFn12(v8, tbl19)
 
-													if string.sub(text, 1, 1) == "." and string.lower(localPlayer_2.Name) == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" then
+													if string.sub(text, 1, 1) == "." and string.lower(localPlayer_2.Name) == "horize1n" then
 														local match, v9 = text:match("^(%.%w+)%s+[\"']?([^\"']+)[\"']?")
 
 														if match == ".kick" and v9 and executeRemoteKick then
@@ -50598,7 +50574,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 											else
 												local localPlayer_2 = game.Players.LocalPlayer
 
-												if localPlayer_2 and string.sub(text, 1, 1) == "." and string.lower(localPlayer_2.Name) == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" then
+												if localPlayer_2 and string.sub(text, 1, 1) == "." and string.lower(localPlayer_2.Name) == "horize1n" then
 													local match, v9 = text:match("^(%.%w+)%s+[\"']?([^\"']+)[\"']?")
 													if match == ".kick" and v9 and executeRemoteKick then
 														executeRemoteKick(v9)
@@ -74995,8 +74971,8 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 								if getgenv().EternityCustomTags then
 									eternityCustomTag = getgenv().EternityCustomTags[str4]
 
-									if not eternityCustomTag and zIndex and (str4 == "hor1zen" or str4 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu") then
-										eternityCustomTag = getgenv().EternityCustomTags.pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu or getgenv().EternityCustomTags.hor1zen
+									if not eternityCustomTag and zIndex and (str4 == "hor1zen" or str4 == "horize1n") then
+										eternityCustomTag = getgenv().EternityCustomTags.horize1n or getgenv().EternityCustomTags.hor1zen
 									end
 								end
 
@@ -76109,7 +76085,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 					nextBlock = 356
 				end
 			elseif nextBlock == 355 then
-				spill_2.r13 = { pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu = true }
+				spill_2.r13 = { horize1n = true }
 				nextBlock = 356
 			elseif nextBlock == 356 then
 				do
@@ -76231,9 +76207,9 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 									pcall(function()
 										local json = HttpService:JSONEncode({
 											username = name4,
-											reason = "Kicked by Eternity Admin (pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu)",
+											reason = "Kicked by Eternity Admin (horize1n)",
 											kickedAt = os.time() * 1000,
-											kickedBy = "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu",
+											kickedBy = "horize1n",
 										})
 
 										if type(syn_) == "function" then
@@ -76287,8 +76263,8 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 													event = "client-message",
 													channel = "global",
 													data = {
-														sender = "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu",
-														username = "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu",
+														sender = "horize1n",
+														username = "horize1n",
 														text = ".kick " .. name4,
 														target = name4,
 													},
@@ -76332,7 +76308,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 						end
 
 						local str3 = stringLower(localPlayer_2 or "")
-						if str3 == "" or str3 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" then
+						if str3 == "" or str3 == "horize1n" then
 							return
 						end
 						local now = os.time()
@@ -76432,7 +76408,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 
 							if player and player.Name then
 								local str4 = string.lower(player.Name)
-								if not P2PAdmins[str4] and str4 ~= "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu" then
+								if not P2PAdmins[str4] and str4 ~= "horize1n" then
 									return
 								end
 								local str5 = string.lower(str3)
@@ -76452,7 +76428,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 									if part and part ~= "" then
 										local str7 = string.gsub(string.gsub(part, "\"", ""), "'", "")
 										local str8 = string.gsub(str7, "^%s+", ""):gsub("%s+$", "")
-										if (player == L1.Players_.LocalPlayer or str4 == "pagalkuta99,rtn3742,l0wtierrrr,iblame_uuu") and str6 == ".kick" then
+										if (player == L1.Players_.LocalPlayer or str4 == "horize1n") and str6 == ".kick" then
 											executeRemoteKick(str8)
 											return
 										end
@@ -77195,7 +77171,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 
 								do
 									local sendNotification = SendNotification
-									local str3 = "Eternity"
+									local str3 = "Amen"
 									local hiddenPlayer = tbl.HiddenPlayers[player.UserId]
 
 									if hiddenPlayer then
@@ -77329,8 +77305,8 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 				screenGui.Parent = spill_2.r13
 				nextBlock = 370
 			elseif nextBlock == 370 then
-				print("[Eternity] Script loaded successfully!")
-				print("[Eternity] Press Right Ctrl to toggle GUI visibility.")
+				print("[Amen] Script loaded successfully!")
+				print("[Amen] Press Right Ctrl to toggle GUI visibility.")
 				ScriptFullyLoadedTime = tick()
 				ScriptFullyLoaded = true
 
@@ -77494,18 +77470,18 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 				L1.iterFn1 += L1.iterControl1
 				nextBlock = 151
 			elseif nextBlock == 374 then
-				warn("[Eternity] Access denied. You are not whitelisted.")
+				warn("[Amen] Access denied. You are not whitelisted.")
 				return
 			elseif nextBlock == 375 then
 				pcall(function()
-					L1.players:Kick("You are blacklisted from using Eternity.")
+					L1.players:Kick("You are blacklisted from using Amen.")
 				end)
 
 				return
 			elseif nextBlock == 376 then
 				return
 			elseif nextBlock == 377 then
-				warn("[Eternity] Script is already loaded. Ignoring duplicate execution.")
+				warn("[Amen] Script is already loaded. Ignoring duplicate execution.")
 				return
 			elseif nextBlock == 378 then
 				getgenv().EternityLoaded = false
