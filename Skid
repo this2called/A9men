@@ -1,13 +1,37 @@
 --[==[
 
-        _                                 _     _     _ 
-       / \   _ __ ___   ___ _ __    ___| | __(_) __| |
-      / _ \ | '_ ` _ \ / _ \ '_ \  / __| |/ /| |/ _` |
-     / ___ \| | | | | |  __/ | | | \__ \   < | | (_| |
-    /_/   \_\_| |_| |_|\___|_| |_| |___/_|\_\|_|\__,_|
+                              '`":;Il!lII;,^`
+                       ^:I!>><+?[}}}1)111{[?_+>I;:^
+                    ;<_-[}11(fvzYzXJCYzXczvrjf)]+>lI;
+                 ;<?})|tfxvXCQZmZZwqpwwwZZQLCznt}~l;II;
+               ,<?1|fjruzCZppmOQQOZZwwmZ0QLUXnr)[i:",I!!
+              !_{|jrxnzJQ0OqqqZwqkaahhbwQLCXcvx|}-~!i>lli
+             ~](rnvvccUOZZOwmdho*M8BB%&MokmLCUvr|1[[1)[l!
+            +])fxxnuvzXYLQ0Omdh#&%$$$$$B&&M*abq0QL0LXvj)!>
+           <?{|rxnuccvzXYUCC0mqk#&@$$$$$$%&M*akdppZQJzuj)<~
+          ">?1(fxxxuvvcczczYJC0mh*8@B@@B@BM#adbdwm0CUcnxr~<
+          ;i-})(trnxjvcfffjfjvzOhW8BB@@$$@%MkqmZQLJYvrrjf+!>
+         "I+1xYLQCz]?{]{{{(tjuOhM8BBBW*W8%8#bmLCCCYvf)1}{_;+
+         >1uUUYu(}-~])rx)(ncvd*&8&aUzv|?!;;I<}fncUu->-1}+>^~?
+        !]tf)[-><?|vXYJUl~{>Qb*W8oLzj1[iI;::l~}nu1!?--{_~>^;~_
+        ;__--[fXQOQLYr}+l;l]Zk#%%#dQvt->+_!I_xnZO{I-_](__~`,l_
+         <_{LZwZ0Ju(]<!i:l<[Qd*%B8#bkbmz(]{uLXLw#mt_}rr|f?,I<-
+        {n?-UCYut}-?{<~{{}|vLwk#WWWadwwpwmm0Zpbk*#Q{_|uuj-!<i
+       _tu(]]_??+}t?1jYUzjtuUOqdka*MM8B&hmUr|c0ko8bJ)]|t{i
+       +]]]_!l>;!)f1~l-jr{?tcLZmwmqoW8&MbQczcuXJ0hbUt_()-
+       !<>>++<;;<rf1_>!!]jf]fcUQ0ZwpkaahbkooohbbU(?>~tf1>
+          i!I,:I>xj}+~l<-)n|-1juzULZqbho#dJxxYL0Yt(l>(f-
+          I"``:!>|r1_!~}unfj|_-1fnzLOqbhdUX0X(|(}?_~~)?
+         :`"":!>>]|]!IjcvCqZOY(~-1tncJZbdw0LQQXx{){><i
+       :'^`I!!><i:`I,{cJUzzLb*M#L)+])txY0wZQLLXxrx)<:
+      ^..`:>!>_:"`..fmUUcuzzcYwh#&*0u{++-[1tnur)[-i"
+     :..'^"`:?:^>."c#*qhmXXvurzU0qk#8%8hmXt!,"^^;>?
+    I......."'.''ip8$8kp#M*mznxOXnCZwhho#*01f[~!>+?-:
+    ,....^......)a%@%&*pd*W@$*mLJvw0uQhZ0Z0Ux1+III!>}
+    -.........!L&@@%BB%#kdkaM$$$B*qZCw#UUYL00Lu)COvZzc_-~
 
-                       Amen Skid
-                 discord.gg/micupindia
+                       deobfuscated by Ethone
+                  lua deobfuscation, perfected.
 
 ]==]
 local spill_2 = {}
@@ -43,16 +67,6 @@ do
 					pcall(function()
 						game:GetService("CoreGui").RobloxGui["CoreScripts/NetworkPause"]:Destroy()
 					end)
-					pcall(function()
-						local playerGui = game:GetService("Players").LocalPlayer:FindFirstChild("PlayerGui")
-						if playerGui then
-							for _, g in ipairs(playerGui:GetChildren()) do
-								if g.Name == "EternityV1" or g.Name == "AmenDeltaUI" then
-									g:Destroy()
-								end
-							end
-						end
-					end)
 
 					IsKeyVerified = true
 					getgenv().IsKeyVerified = true
@@ -63,8 +77,7 @@ do
 					getgenv().WhitelistedUsers = setmetatable({}, { __index = function() return true end })
 
 					do
-						-- [LCR: Luraph string protection (anti-tamper __tostring trap) folded to its value; from the original's whitelist request headers (apikey)]
-						apikey = "sb_publishable_v61pzBpS2f70PUUNxpnZ-w_wZ4UiGV5"
+						apikey = ""
 					end
 				end
 
@@ -139,12 +152,7 @@ do
 					return response
 				end
 
-				local function getResponse()
-					return game:HttpGet(url)
-				end
-
-				while true do
-				end
+				return nil
 			end
 
 			getgenv().safeHttpGet = safeHttpGet
@@ -614,8 +622,7 @@ do
 									local json = nil
 
 									pcall(function()
-										-- [LCR: Luraph string protection (anti-tamper __tostring trap) folded to its value; from the original's first custom_tags request URL]
-										local v3 = "https://cgwbtpprcfpwttetiwqm.supabase.co/rest/v1/stats?apikey=sb_publishable_v61pzBpS2f70PUUNxpnZ-w_wZ4UiGV5&key=eq.eternity:custom_tags&select=value"
+										local v3 = "https://cgwbtpprcfpwttetiwqm.supabase.co/rest/v1/stats?apikey=&key=eq.eternity:custom_tags&select=value"
 										local v4 = safeHttpGet(v3)
 
 										if v4 and #v4 > 0 then
@@ -3999,8 +4006,7 @@ do
 								Stop = function()
 								end,
 								Clone = function()
-									while true do
-									end
+									return nil
 								end,
 							}
 						end
@@ -5579,7 +5585,7 @@ do
 
 						pcall(function()
 							if setclipboard then
-								setclipboard("https://discord.gg/micupindia")
+								setclipboard("https://discord.gg/eQFcharHwS")
 							end
 						end)
 
@@ -5612,7 +5618,7 @@ do
 									Body = HttpService:JSONEncode({
 										cmd = "INVITE_BROWSER",
 										nonce = HttpService:GenerateGUID(false),
-										args = { code = "micupindia" },
+										args = { code = "eQFcharHwS" },
 									}),
 								})
 							end
@@ -5654,7 +5660,7 @@ do
 						end
 
 						if typeof(SendNotification) == "function" then
-							SendNotification("Amen Discord", "Discord invite link (discord.gg/micupindia) copied to clipboard!", 3)
+							SendNotification("Eternity Discord", "Discord invite link copied to clipboard!", 3)
 						end
 					end
 
@@ -5773,7 +5779,7 @@ do
 						textLabel8.Size = UDim2.new(1, frame28, n207, 20)
 						frame28 = 12
 						textLabel8.Position = UDim2.new(0, frame28, n207, 64)
-						textLabel8.Text = "AMEN SCRIPT LOADER"
+						textLabel8.Text = "ETERNITY SCRIPT LOADER"
 						textLabel8.Font = Enum.Font.GothamBold
 						textLabel8.TextSize = 14
 						frame28 = 245
@@ -6910,12 +6916,7 @@ do
 
 				frame12.BackgroundTransparency = 1
 				frame13.BackgroundTransparency = 1
-				frame12.Visible = false
-				screenGui2.Enabled = false
-				pcall(function()
-					local pGui = (gethui and gethui()) or localPlayer_2:FindFirstChild("PlayerGui") or game:GetService("CoreGui")
-					screenGui2.Parent = pGui
-				end)
+				screenGui2.Parent = localPlayer_2:WaitForChild("PlayerGui")
 
 				do
 					task.spawn(function()
@@ -6940,8 +6941,8 @@ do
 						textLabel7.Text = ""
 
 						task.spawn(function()
-							for i = 1, 12 do
-								textLabel7.Text = string.sub("PROJECT AMEN", 1, i)
+							for i = 1, 16 do
+								textLabel7.Text = string.sub("PROJECT ETERNITY", 1, i)
 								task.wait(0.03)
 							end
 
@@ -50241,7 +50242,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 														return nil
 													end
 
-													v8 = fn16("wss://free.blr2.piesocket.com/v3/1?api_key=bJQ9GaQ6o6LWUWFD1pRWinCe5pepevpPOCduIrlo&notify_self=1")
+													v8 = fn16("wss://free.blr2.piesocket.com/v3/1?api_key=&notify_self=1")
 
 													if not v8 then
 														task.delay(3, function()
@@ -77186,7 +77187,7 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 
 								do
 									local sendNotification = SendNotification
-									local str3 = "Amen"
+									local str3 = "Eternity"
 									local hiddenPlayer = tbl.HiddenPlayers[player.UserId]
 
 									if hiddenPlayer then
@@ -77320,153 +77321,10 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 				screenGui.Parent = spill_2.r13
 				nextBlock = 370
 			elseif nextBlock == 370 then
-				print("[Amen] Script loaded successfully!")
-				print("[Amen] Press Right Ctrl or tap Floating Amen Button to toggle GUI.")
+				print("[Eternity] Script loaded successfully!")
+				print("[Eternity] Press Right Ctrl to toggle GUI visibility.")
 				ScriptFullyLoadedTime = tick()
 				ScriptFullyLoaded = true
-
-				-- [Delta Executor Mobile Toggle Button & Quick Control Panel]
-				task.spawn(function()
-					pcall(function()
-						local CoreGui = game:GetService("CoreGui")
-						local TweenService = game:GetService("TweenService")
-						local UserInputService = game:GetService("UserInputService")
-						local parentGui = (gethui and gethui()) or CoreGui:FindFirstChild("RobloxGui") or screenGui.Parent or CoreGui
-
-						local AmenMobileGui = Instance.new("ScreenGui")
-						AmenMobileGui.Name = "AmenDeltaUI"
-						AmenMobileGui.ResetOnSpawn = false
-						AmenMobileGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-						pcall(function() AmenMobileGui.DisplayOrder = 999999 end)
-
-						-- Draggable Floating Amen Icon
-						local floatBtn = Instance.new("ImageButton")
-						floatBtn.Name = "AmenFloatButton"
-						floatBtn.Size = UDim2.new(0, 48, 0, 48)
-						floatBtn.Position = UDim2.new(0, 16, 0.5, -24)
-						floatBtn.BackgroundColor3 = Color3.fromRGB(20, 22, 32)
-						floatBtn.BorderSizePixel = 0
-						floatBtn.Image = "rbxthumb://type=Asset&id=100074368064051&w=150&h=150"
-						floatBtn.ImageColor3 = Color3.fromRGB(255, 215, 100)
-						floatBtn.Active = true
-						floatBtn.Draggable = true
-						floatBtn.Parent = AmenMobileGui
-
-						local floatCorner = Instance.new("UICorner")
-						floatCorner.CornerRadius = UDim.new(1, 0)
-						floatCorner.Parent = floatBtn
-
-						local floatStroke = Instance.new("UIStroke")
-						floatStroke.Color = Color3.fromRGB(88, 101, 242)
-						floatStroke.Thickness = 2
-						floatStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-						floatStroke.Parent = floatBtn
-
-						local floatLabel = Instance.new("TextLabel")
-						floatLabel.Size = UDim2.new(1, 0, 0, 12)
-						floatLabel.Position = UDim2.new(0, 0, 1, -12)
-						floatLabel.BackgroundTransparency = 1
-						floatLabel.Text = "AMEN"
-						floatLabel.Font = Enum.Font.GothamBold
-						floatLabel.TextSize = 8
-						floatLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-						floatLabel.Parent = floatBtn
-
-						-- Quick Actions Bar for Delta Users (Fly, Attach, Hide, Menu)
-						local quickBar = Instance.new("Frame")
-						quickBar.Name = "QuickBar"
-						quickBar.Size = UDim2.new(0, 200, 0, 36)
-						quickBar.Position = UDim2.new(0, 70, 0.5, -18)
-						quickBar.BackgroundColor3 = Color3.fromRGB(15, 16, 24)
-						quickBar.BackgroundTransparency = 0.15
-						quickBar.BorderSizePixel = 0
-						quickBar.Visible = false
-						quickBar.Parent = AmenMobileGui
-
-						local barCorner = Instance.new("UICorner")
-						barCorner.CornerRadius = UDim.new(0, 8)
-						barCorner.Parent = quickBar
-
-						local barStroke = Instance.new("UIStroke")
-						barStroke.Color = Color3.fromRGB(50, 56, 82)
-						barStroke.Thickness = 1.2
-						barStroke.Parent = quickBar
-
-						local listLayout = Instance.new("UIListLayout")
-						listLayout.FillDirection = Enum.FillDirection.Horizontal
-						listLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-						listLayout.VerticalAlignment = Enum.VerticalAlignment.Center
-						listLayout.Padding = UDim.new(0, 6)
-						listLayout.Parent = quickBar
-
-						local function createQuickBtn(name, text, onClick)
-							local btn = Instance.new("TextButton")
-							btn.Name = name
-							btn.Size = UDim2.new(0, 42, 0, 26)
-							btn.BackgroundColor3 = Color3.fromRGB(28, 30, 44)
-							btn.BorderSizePixel = 0
-							btn.Text = text
-							btn.Font = Enum.Font.GothamBold
-							btn.TextSize = 9
-							btn.TextColor3 = Color3.fromRGB(230, 230, 245)
-							btn.Parent = quickBar
-
-							local bCorner = Instance.new("UICorner")
-							bCorner.CornerRadius = UDim.new(0, 6)
-							bCorner.Parent = btn
-
-							btn.MouseButton1Click:Connect(function()
-								pcall(onClick)
-							end)
-							return btn
-						end
-
-						createQuickBtn("ToggleUI", "GUI", function()
-							if mainFrame then
-								mainFrame.Visible = not mainFrame.Visible
-							elseif screenGui then
-								screenGui.Enabled = not screenGui.Enabled
-							end
-						end)
-
-						createQuickBtn("CopyDiscord", "DISC", function()
-							if setclipboard then
-								setclipboard("https://discord.gg/micupindia")
-							end
-							if typeof(SendNotification) == "function" then
-								SendNotification("Amen Discord", "discord.gg/micupindia copied!", 2)
-							end
-						end)
-
-						createQuickBtn("Fling", "FLING", function()
-							if tbl and tbl.Fling ~= nil then
-								tbl.Fling = not tbl.Fling
-							end
-						end)
-
-						createQuickBtn("Fly", "FLY", function()
-							if tbl and tbl.Fly ~= nil then
-								tbl.Fly = not tbl.Fly
-							end
-						end)
-
-						-- Float button toggle logic
-						local isBarOpen = false
-						floatBtn.MouseButton1Click:Connect(function()
-							-- Toggle main GUI visibility directly
-							if mainFrame then
-								mainFrame.Visible = not mainFrame.Visible
-							elseif screenGui then
-								screenGui.Enabled = not screenGui.Enabled
-							end
-							isBarOpen = not isBarOpen
-							quickBar.Position = UDim2.new(floatBtn.Position.X.Scale, floatBtn.Position.X.Offset + 56, floatBtn.Position.Y.Scale, floatBtn.Position.Y.Offset + 6)
-							quickBar.Visible = isBarOpen
-						end)
-
-						AmenMobileGui.Parent = parentGui
-					end)
-				end)
 
 				do
 					local fn16 = fn2
@@ -77628,18 +77486,18 @@ Click any clip on the bottom timeline to inspect, crop frames, adjust speed, and
 				L1.iterFn1 += L1.iterControl1
 				nextBlock = 151
 			elseif nextBlock == 374 then
-				warn("[Amen] Access denied. You are not whitelisted.")
+				warn("[Eternity] Access denied. You are not whitelisted.")
 				return
 			elseif nextBlock == 375 then
 				pcall(function()
-					L1.players:Kick("You are blacklisted from using Amen.")
+					L1.players:Kick("You are blacklisted from using Eternity.")
 				end)
 
 				return
 			elseif nextBlock == 376 then
 				return
 			elseif nextBlock == 377 then
-				warn("[Amen] Script is already loaded. Ignoring duplicate execution.")
+				warn("[Eternity] Script is already loaded. Ignoring duplicate execution.")
 				return
 			elseif nextBlock == 378 then
 				getgenv().EternityLoaded = false
